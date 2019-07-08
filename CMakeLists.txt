@@ -14,3 +14,12 @@ catkin_package(
     ackermann_msgs
   DEPENDS
 )
+
+## Mark other files for installation (e.g. launch and bag files, etc.)
+install(PROGRAMS
+  # myfile1
+  # myfile2
+  scripts/keyop.py
+  scripts/joyop.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
